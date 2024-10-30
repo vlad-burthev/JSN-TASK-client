@@ -1,0 +1,78 @@
+.modal-bg {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.152);
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  padding: 0 30px 30px;
+  box-sizing: border-box;
+
+  background-color: #fff;
+
+  overflow-y: auto;
+
+  grid-row: 2;
+  grid-column: 2;
+
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: sticky;
+  margin-left: auto;
+  top: 2px;
+  padding: 0;
+  cursor: pointer;
+  padding: 10px;
+
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+
+  & > svg {
+    width: 30px;
+    display: block;
+    height: 30px;
+  }
+}
+
+.input {
+  border: 1px solid rgb(41, 135, 167);
+  border-radius: 10px;
+  padding: 10px 20px;
+
+  &:focus {
+    outline: 2px solid lightblue;
+  }
+}
+
+.submit-btn {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.error-message {
+  margin: 10px 0;
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+  padding: 5px 10px;
+}

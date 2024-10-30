@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 0;
+
+  & a {
+    color: blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & button:hover {
+    text-decoration: underline;
+  }
+}

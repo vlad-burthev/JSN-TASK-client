@@ -1,0 +1,19 @@
+.input {
+  border: 1px solid rgb(41, 135, 167);
+  border-radius: 10px;
+  padding: 10px 20px;
+
+  &:focus {
+    outline: 2px solid lightblue;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input {
+  font-size: 16px;
+}
